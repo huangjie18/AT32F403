@@ -1,0 +1,17 @@
+--cpu Cortex-M4.fp
+".\objects\main.o"
+".\objects\at32f4xx_it.o"
+".\objects\startup_at32f403vx_xl.o"
+".\objects\system_at32f4xx.o"
+".\objects\at32f4xx_rcc.o"
+".\objects\misc.o"
+".\objects\at32f4xx_gpio.o"
+".\objects\at32f4xx_spi.o"
+".\objects\bsp_led.o"
+".\objects\bsp_spi.o"
+".\objects\bsp_lcd.o"
+".\objects\delay.o"
+--strict --scatter ".\Objects\AT32F403.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\AT32F403.map" -o .\Objects\AT32F403.axf
